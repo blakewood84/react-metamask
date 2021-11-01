@@ -12,4 +12,4 @@ A simple project to plugin Metamask with a React App for simple Etherium transac
 
 To run this project please download Ganache and run a local chain to utilize chain ID 1337
 
-[Download Ginache](https://www.trufflesuite.com/ganache)
+[Download Ganache](https://www.trufflesuite.com/ganache)
