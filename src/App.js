@@ -1,22 +1,21 @@
 import logo from './logo.svg';
+import { useState, useEffect } from 'react';
 import './App.css';
+import { injected } from './components/wallet/connectors';
+
+import useMetaMask from './hooks/metamask';
 
 function App() {
+
+  const { connect, disconnect, isActive, account } = useMetaMask()
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button onClick={connect}>Connect to MetaMask</button>
+        { isActive ? <span>Connected with {account}</span> : <span>Not Connected</span> }
+
+        <button onClick={disconnect}>Deactivate MetaMask</button>
       </header>
     </div>
   );
