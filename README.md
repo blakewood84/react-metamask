@@ -16,4 +16,4 @@ To run this project please download Ganache and run a local chain to utilize cha
 
 ---
 
-![Image of Project](https://github.com/blakewood84/react-metamask/public/images/screenshot.png)
+![Image of Project](/public/images/screenshot.png)
